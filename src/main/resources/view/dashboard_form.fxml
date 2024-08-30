@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="469.0" prefWidth="600.0" style="-fx-background-color: #f1c40f;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.formcontroller.DashboardFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffb61f" height="81.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <Label layoutX="181.0" layoutY="15.0" prefHeight="51.0" prefWidth="238.0" text="My To-Do List">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <JFXListView fx:id="todolist" layoutX="14.0" layoutY="123.0" prefHeight="250.0" prefWidth="272.0" verticalGap="2.0" />
+      <JFXListView fx:id="donelist" layoutX="314.0" layoutY="123.0" prefHeight="250.0" prefWidth="272.0" />
+      <JFXTextField fx:id="txttask" layoutX="14.0" layoutY="402.0" prefHeight="26.0" prefWidth="187.0" />
+      <JFXButton layoutX="212.0" layoutY="402.0" onAction="#btnAddTaskOnAction" style="-fx-background-color: #2ecc71;" text="Add Task">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="517.0" layoutY="402.0" onAction="#btnShowHistoryOnAction" style="-fx-background-color: #e74c3c;" text="History">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="136.0" layoutY="106.0" text="To Do">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="433.0" layoutY="106.0" text="Done">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
